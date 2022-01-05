@@ -1,0 +1,56 @@
+.parent{
+    display:flex;
+    width:100%;
+    padding:2%;
+    margin:2%;
+    
+}
+.parent>.card{
+    width: 20%;
+    border: 2px solid blue;
+    padding: 1%;
+    margin: 1%;
+    text-align: center;
+    
+    
+}
+.button{
+    width: 50%;
+    color: blue;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+/* mobile devices 320 to 480
+tablets 481 to 768px
+mini desktops 769 to 1024
+large desktops 1025 to 1200 */
+@media only screen and {min-width :320px} and {max-width : 480px}
+
+  .parent{
+      display: flex;
+      flex-direction: column;
+  }
+  .parent>.card{
+      width: 90%;
+  }   
+  @media only screen and {min-width :481px} and {max-width : 768}
+  .parent{
+      display: flex;
+      flex-direction: column;
+  }
+  .parent>.card{
+      width: 90%;
+  }
+
+
+  @media only screen and {min-width :769px} and {max-width : px}
+
+  .parent{
+      display: flex;
+      flex-direction: column;
+  }
+  .parent>.card{
+      width: 90%;
+  }      
